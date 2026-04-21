@@ -4,47 +4,42 @@ Project ini adalah aplikasi CRUD Data Salon menggunakan Laravel 12.
 
 ## Fitur
 
-* Tambah data pelanggan salon
-* Lihat data pelanggan
-* Edit data pelanggan
-* Hapus data pelanggan
+- Tambah data pelanggan salon
+- Lihat data pelanggan
+- Edit data pelanggan
+- Hapus data pelanggan
 
 ## Field Data
 
-* Nama Pelanggan
-* Layanan
-* Harga
-* Tanggal Booking
+- Nama Pelanggan
+- Layanan
+- Harga
+- Tanggal Booking
 
 ## Layanan Salon
 
-* Hair Spa
-* Creambath
-* Potong Rambut
-* Hair Coloring
-* Facial
-* Manicure
-* Pedicure
-* Smoothening
+- Hair Spa
+- Creambath
+- Potong Rambut
+- Hair Coloring
+- Facial
+- Manicure
+- Pedicure
+- Smoothening
 
 ## Teknologi
 
-* Laravel 12
-* PHP
-* SQLite
-* Blade Template
-* Bootstrap (jika digunakan)
+- Laravel 12
+- PHP
+- SQLite
+- Blade Template
+- Bootstrap
 
 ## Cara Menjalankan Project
 
 ```bash
 composer install
+npm install
 php artisan migrate:fresh
 php artisan serve
-npm install
 npm run dev
-```
-
-## Author
-
-Fittriya Ramadhani
