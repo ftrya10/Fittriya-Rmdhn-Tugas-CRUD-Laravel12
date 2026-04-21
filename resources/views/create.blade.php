@@ -1,10 +1,12 @@
-<h2>Tambah Salon</h2>
+<h2>Tambah Data Salon</h2>
 
 <form action="/salon/store" method="POST">
     @csrf
-    <input type="text" name="nama_salon" placeholder="Nama"><br>
-    <input type="text" name="alamat" placeholder="Alamat"><br>
-    <input type="text" name="telepon" placeholder="Telepon"><br>
-    <textarea name="deskripsi"></textarea><br>
+
+    <input type="text" name="nama_pelanggan" placeholder="Nama Pelanggan"><br><br>
+    <input type="text" name="layanan" placeholder="Layanan"><br><br>
+    <input type="number" name="harga" placeholder="Harga"><br><br>
+    <input type="date" name="tanggal_booking"><br><br>
+
     <button type="submit">Simpan</button>
 </form>

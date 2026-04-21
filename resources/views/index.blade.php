@@ -1,6 +1,6 @@
 <h2>Data Salon</h2>
 
-<a href="">Tambah Data</a>
+<a href="/salon/create">Tambah Data</a>
 
 <table border="1">
     <tr>
@@ -18,8 +18,13 @@
         <td>{{ $item->harga }}</td>
         <td>{{ $item->tanggal_booking }}</td>
         <td>
-            <a href="">Edit</a>
-            <a href="">Hapus</a>
+            <a href="/salon/edit/{{ $item->id }}">Edit</a>
+
+            <form action="/salon/{{ $item->id }}" method="POST" style="display:inline;">
+                @csrf
+                @method('DELETE')
+                <button type="submit">Hapus</button>
+            </form>
         </td>
     </tr>
     @endforeach
