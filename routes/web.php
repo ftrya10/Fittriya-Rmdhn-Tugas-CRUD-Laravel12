@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SalonController;
 
 Route::get('/', function () {
-    return 'Halo, aplikasi salon siap!';
+    return view('welcome');
 });
 
 // ROUTE SALON
