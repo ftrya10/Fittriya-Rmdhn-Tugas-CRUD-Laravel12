@@ -1,28 +1,26 @@
 <h2>Data Salon</h2>
 
-<a href="/salon/create">Tambah</a>
+<a href="">Tambah Data</a>
 
 <table border="1">
-<tr>
-    <th>Nama</th>
-    <th>Alamat</th>
-    <th>Telepon</th>
-    <th>Aksi</th>
-</tr>
+    <tr>
+        <th>Nama Pelanggan</th>
+        <th>Layanan</th>
+        <th>Harga</th>
+        <th>Tanggal Booking</th>
+        <th>Aksi</th>
+    </tr>
 
-@foreach($salons as $s)
-<tr>
-    <td>{{ $s->nama_salon }}</td>
-    <td>{{ $s->alamat }}</td>
-    <td>{{ $s->telepon }}</td>
-    <td>
-        <a href="/salon/edit/{{ $s->id }}">Edit</a>
-        <form action="/salon/{{ $s->id }}" method="POST">
-            @csrf
-            @method('DELETE')
-            <button type="submit">Hapus</button>
-        </form>
-    </td>
-</tr>
-@endforeach
+    @foreach($salon as $item)
+    <tr>
+        <td>{{ $item->nama_pelanggan }}</td>
+        <td>{{ $item->layanan }}</td>
+        <td>{{ $item->harga }}</td>
+        <td>{{ $item->tanggal_booking }}</td>
+        <td>
+            <a href="">Edit</a>
+            <a href="">Hapus</a>
+        </td>
+    </tr>
+    @endforeach
 </table>

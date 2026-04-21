@@ -3,9 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SalonController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [SalonController::class, 'index']);
 
 // ROUTE SALON
 Route::get('/salon', [SalonController::class, 'index']);
