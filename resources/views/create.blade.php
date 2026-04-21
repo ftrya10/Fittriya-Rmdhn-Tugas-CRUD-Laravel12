@@ -18,7 +18,7 @@
     </select><br><br>
 
     <label>Harga (Rp)</label><br>
-    <input type="number" name="harga" placeholder="Contoh: 150000"><br><br>
+    <input type="number" name="harga" placeholder=><br><br>
 
     <input type="date" name="tanggal_booking"><br><br>
 
